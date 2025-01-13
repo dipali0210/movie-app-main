@@ -51,7 +51,7 @@ const Home = () => {
                     </div>
                 ) : (
                     <div className="container text-center">
-                        <div className="row row-cols-4">
+                        <div className="row row-cols-5">
                             {
                                 allMovies.map((name, index) => {
                                     return <div className="col" key={name?.id} onClick={() => handledclick(name?.id)}>
