@@ -1,0 +1,44 @@
+.nav-dis{
+    margin: 0vw 7vw;
+}
+
+.nav-head{
+    margin-left: auto;
+}
+
+/* Movie Banner */
+  
+  .movie-card img {
+    width: 75%;
+    height: 50vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4caf50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
