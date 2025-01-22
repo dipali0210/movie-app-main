@@ -18,6 +18,7 @@ const MovieDetail = () => {
 
     setLoading(true);
 
+    // Get Movies Detailes
     axios.request(`https://api.themoviedb.org/3/movie/${location.state.key}?api_key=${Api_key}&language=en-US`).then((response) => {
       console.log(response);
       setMoviesDetail(response.data);
@@ -30,6 +31,7 @@ const MovieDetail = () => {
         setLoading(false);
       });
 
+      // Get Movies Cast Data
     axios.request(`https://api.themoviedb.org/3/movie/${location.state.key}/credits?api_key=${Api_key}&language=en-US`).then((response) => {
       console.log(response);
       setCast(response.data.cast);
